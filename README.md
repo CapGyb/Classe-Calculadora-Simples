@@ -102,10 +102,15 @@ Erro: entrada inválida.
 ## Exemplo de Execução
 
 ===== CALCULADORA =====
+
 1 - Soma
+
 2 - Subtração
+
 3 - Multiplicação
+
 4 - Divisão
+
 5 - Sair
 
 Escolha uma opção: 1  
