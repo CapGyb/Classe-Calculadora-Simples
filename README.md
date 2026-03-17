@@ -67,11 +67,17 @@ Principais recursos utilizados:
 Ao executar o programa, o seguinte menu será exibido:
 
 ===== CALCULADORA =====
+
 1 - Soma
+
 2 - Subtração
+
 3 - Multiplicação
+
 4 - Divisão
+
 5 - Sair
+
 
 O usuário escolhe uma opção e informa dois números para realizar o cálculo.
 
