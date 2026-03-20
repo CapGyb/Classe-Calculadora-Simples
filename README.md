@@ -69,11 +69,11 @@ Ao executar o programa, o seguinte menu será exibido:
 
 ===== CALCULADORA =====
 
-- 1 - Soma
-- 2 - Subtração
-- 3 - Multiplicação
-- 4 - Divisão
-- 5 - Sair
+ 1 - Soma
+ 2 - Subtração
+ 3 - Multiplicação
+ 4 - Divisão
+ 5 - Sair
 
 O usuário escolhe uma opção e informa dois números para realizar o cálculo.
 
@@ -100,13 +100,9 @@ Erro: entrada inválida.
 ===== CALCULADORA =====
 
 1 - Soma
-
 2 - Subtração
-
 3 - Multiplicação
-
 4 - Divisão
-
 5 - Sair
 
 Escolha uma opção: 1  
@@ -210,6 +206,7 @@ O workflow está configurado para rodar automaticamente a cada `push`, validando
 ## 📁 Estrutura do Projeto
 
 O projeto segue a estrutura padrão de aplicações Java utilizando Maven:
+```
 Classe-Calculadora-Simples/
 ├── .github/workflows/ # Configuração do GitHub Actions (CI)
 ├── src/
@@ -217,6 +214,6 @@ Classe-Calculadora-Simples/
 │ └── test/java/com/calculadora/ # Testes automatizados (JUnit)
 ├── pom.xml # Gerenciador de dependências e build (Maven)
 └── README.md # Documentação do projeto
-
+```
 
 Essa organização facilita a manutenção, execução de testes e integração com ferramentas de automação, seguindo padrões amplamente utilizados no mercado.
