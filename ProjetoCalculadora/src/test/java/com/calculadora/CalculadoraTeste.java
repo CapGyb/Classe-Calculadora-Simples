@@ -1,6 +1,8 @@
 package com.calculadora;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
 
 public class CalculadoraTeste {
 
@@ -12,7 +14,7 @@ public class CalculadoraTeste {
 
         double resultado = calc.somar();
 
-        assertEquals(15, resultado);
+        assertEquals(15, resultado, 0.001);
     }
 
     @Test
@@ -23,7 +25,7 @@ public class CalculadoraTeste {
 
         double resultado = calc.subtrair();
 
-        assertEquals(5, resultado);
+        assertEquals(5, resultado, 0.001);
     }
 
     @Test
@@ -34,7 +36,7 @@ public class CalculadoraTeste {
 
         double resultado = calc.multiplicar();
 
-        assertEquals(50, resultado);
+        assertEquals(50, resultado, 0.001);
     }
 
     @Test
@@ -45,7 +47,7 @@ public class CalculadoraTeste {
 
         double resultado = calc.dividir();
 
-        assertEquals(5, resultado);
+        assertEquals(5, resultado, 0.001);
     }
 
     @Test
@@ -67,6 +69,6 @@ public class CalculadoraTeste {
 
         double resultado = calc.subtrair();
 
-        assertEquals(-5, resultado);
+        assertEquals(-5, resultado, 0.001);
     }
 }
