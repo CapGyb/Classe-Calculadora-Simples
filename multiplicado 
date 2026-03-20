@@ -1,0 +1,90 @@
+import java.util.Scanner;
+
+public class CalculadoraMultiplicacao {
+
+    // ---------------------------------
+    // MÉTODO DE MULTIPLICAÇÃO
+    // ---------------------------------
+    public static double multiplicar(double a, double b) {
+        return a * b;
+    }
+
+    // ---------------------------------
+    // TESTE DRIVER
+    // ---------------------------------
+    public static void testeDriver() {
+
+        System.out.println("\n=== TESTE DRIVER ===");
+
+        double[][] testes = {
+                {2, 3},
+                {5, 0},
+                {-4, 6},
+                {1.5, 2},
+                {-3, -3}
+        };
+
+        for (double[] t : testes) {
+            double resultado = multiplicar(t[0], t[1]);
+            System.out.println(t[0] + " x " + t[1] + " = " + resultado);
+        }
+
+        System.out.println("=== FIM DOS TESTES ===\n");
+    }
+
+    // ---------------------------------
+    // CALCULADORA
+    // ---------------------------------
+    public static void calculadora() {
+
+        Scanner scanner = new Scanner(System.in);
+        boolean continuar = true;
+
+        System.out.println("=================================");
+        System.out.println("  CALCULADORA DE MULTIPLICAÇÃO");
+        System.out.println("=================================");
+
+        while (continuar) {
+
+            try {
+
+                System.out.print("\nDigite o primeiro número: ");
+                double num1 = scanner.nextDouble();
+
+                System.out.print("Digite o segundo número: ");
+                double num2 = scanner.nextDouble();
+
+                double resultado = multiplicar(num1, num2);
+
+                System.out.println("-------------------------------");
+                System.out.println("Resultado: " + num1 + " x " + num2 + " = " + resultado);
+                System.out.println("-------------------------------");
+
+            } catch (Exception e) {
+
+                System.out.println("Erro: Digite apenas números!");
+                scanner.nextLine(); // limpa entrada inválida
+            }
+
+            System.out.print("\nDeseja continuar? (s/n): ");
+            String resposta = scanner.next();
+
+            if (!resposta.equalsIgnoreCase("s")) {
+                continuar = false;
+            }
+        }
+
+        System.out.println("\nPrograma finalizado.");
+        scanner.close();
+    }
+
+    // ---------------------------------
+    // MAIN
+    // ---------------------------------
+    public static void main(String[] args) {
+
+        testeDriver(); // roda testes
+
+        calculadora(); // roda programa
+    }
+}
