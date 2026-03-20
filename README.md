@@ -69,11 +69,11 @@ Ao executar o programa, o seguinte menu será exibido:
 
 ===== CALCULADORA =====
 
- 1 - Soma
- 2 - Subtração
- 3 - Multiplicação
- 4 - Divisão
- 5 - Sair
+ 1 - Soma  
+ 2 - Subtração  
+ 3 - Multiplicação  
+ 4 - Divisão  
+ 5 - Sair  
 
 O usuário escolhe uma opção e informa dois números para realizar o cálculo.
 
@@ -99,11 +99,11 @@ Erro: entrada inválida.
 
 ===== CALCULADORA =====
 
-1 - Soma
-2 - Subtração
-3 - Multiplicação
-4 - Divisão
-5 - Sair
+1 - Soma  
+2 - Subtração  
+3 - Multiplicação  
+4 - Divisão  
+5 - Sair  
 
 Escolha uma opção: 1  
 Digite o primeiro número: 10  
