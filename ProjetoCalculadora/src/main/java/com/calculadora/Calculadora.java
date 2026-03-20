@@ -1,3 +1,4 @@
+package com.calculadora;
 public class Calculadora {
 
     private double numero1;
